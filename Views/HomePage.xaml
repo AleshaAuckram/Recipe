@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Recipe.Views.HomePage"
+             xmlns:control="clr-namespace:Recipe.ImageConverter"
+             xmlns:viewmodel="clr-namespace:Recipe.ViewModels"
+             x:DataType="viewmodel:HomePageViewModel"
+             xmlns:model="clr-namespace:Recipe.Models"
+             Title="{Binding Title}">
+
+    <ContentPage.ToolbarItems>
+        <!-- ToolbarItem with a button -->
+        <ToolbarItem Text="Customer Feedback" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <CollectionView ItemsSource="{Binding RecipeObjects}" SelectionMode="Single" HorizontalOptions="StartAndExpand">
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="model:MyRecipe">
+
+                <Frame WidthRequest="350" Margin="0,2,0,0">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:HomePageViewModel}}, Path=GotoDetailsCommand}" CommandParameter="{Binding .}"></TapGestureRecognizer>
+                    </Frame.GestureRecognizers>
+
+                    <HorizontalStackLayout VerticalOptions="CenterAndExpand" Spacing="10">
+                        <control:ImageControl Base64Source="{Binding Image}" WidthRequest="100" HeightRequest="100" Margin="-20,0,0,0" HorizontalOptions="StartAndExpand"></control:ImageControl>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}" HorizontalOptions="Start" VerticalTextAlignment="Center" ></Label>
+                            <Label Text="{Binding Description}" HorizontalOptions="Start" VerticalTextAlignment="Center" ></Label>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
