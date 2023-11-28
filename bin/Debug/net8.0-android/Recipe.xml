@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Recipe</name>
+    </assembly>
+    <members>
+        <member name="T:Recipe.ViewModels.CountryPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.Title">
+            <inheritdoc cref="F:Recipe.ViewModels.CountryPageViewModel.title"/>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.OriginObject">
+            <inheritdoc cref="F:Recipe.ViewModels.CountryPageViewModel.originObject"/>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.ShowPopup">
+            <inheritdoc cref="F:Recipe.ViewModels.CountryPageViewModel.showPopup"/>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.HeaderTitle">
+            <inheritdoc cref="F:Recipe.ViewModels.CountryPageViewModel.headerTitle"/>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.SelectedRowData">
+            <inheritdoc cref="F:Recipe.ViewModels.CountryPageViewModel.selectedRowData"/>
+        </member>
+        <member name="M:Recipe.ViewModels.CountryPageViewModel.OnSelectedRowDataChanged(Recipe.Models.Country,Recipe.Models.Country)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.CountryPageViewModel.SelectedRowData"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.CountryPageViewModel.SelectedRowData"/> is changed.</remarks>
+        </member>
+        <member name="F:Recipe.ViewModels.CountryPageViewModel.showDialogCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.CountryPageViewModel.ShowDialogCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.ShowDialogCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.CountryPageViewModel.ShowDialog"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.CountryPageViewModel.saveObjectCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.CountryPageViewModel.SaveObjectCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.SaveObjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.CountryPageViewModel.SaveObject"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.CountryPageViewModel.loadOriginsCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.CountryPageViewModel.LoadOriginsCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.CountryPageViewModel.LoadOriginsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.CountryPageViewModel.LoadOrigins"/>.</summary>
+        </member>
+        <member name="T:Recipe.ViewModels.HomePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Recipe.ViewModels.HomePageViewModel.Title">
+            <inheritdoc cref="F:Recipe.ViewModels.HomePageViewModel.title"/>
+        </member>
+        <member name="F:Recipe.ViewModels.HomePageViewModel.loadDataCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.HomePageViewModel.LoadDataCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.HomePageViewModel.LoadDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.HomePageViewModel.LoadData"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.HomePageViewModel.gotoDetailsCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.HomePageViewModel.GotoDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.HomePageViewModel.GotoDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Recipe.ViewModels.HomePageViewModel.GotoDetails(Recipe.Models.MyRecipe)"/>.</summary>
+        </member>
+        <member name="T:Recipe.ViewModels.InstructionPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.Title">
+            <inheritdoc cref="F:Recipe.ViewModels.InstructionPageViewModel.title"/>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.ProcedureObject">
+            <inheritdoc cref="F:Recipe.ViewModels.InstructionPageViewModel.procedureObject"/>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.ShowPopup">
+            <inheritdoc cref="F:Recipe.ViewModels.InstructionPageViewModel.showPopup"/>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.HeaderTitle">
+            <inheritdoc cref="F:Recipe.ViewModels.InstructionPageViewModel.headerTitle"/>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.SelectedRowData">
+            <inheritdoc cref="F:Recipe.ViewModels.InstructionPageViewModel.selectedRowData"/>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.SelectedRecipe">
+            <inheritdoc cref="F:Recipe.ViewModels.InstructionPageViewModel.selectedRecipe"/>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.GetProceduresByRecipe">
+            <inheritdoc cref="F:Recipe.ViewModels.InstructionPageViewModel.getProceduresByRecipe"/>
+        </member>
+        <member name="M:Recipe.ViewModels.InstructionPageViewModel.OnSelectedRowDataChanged(Recipe.Models.Instruction,Recipe.Models.Instruction)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.InstructionPageViewModel.SelectedRowData"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.InstructionPageViewModel.SelectedRowData"/> is changed.</remarks>
+        </member>
+        <member name="M:Recipe.ViewModels.InstructionPageViewModel.OnSelectedRecipeChanged(Recipe.Models.MyRecipe,Recipe.Models.MyRecipe)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.InstructionPageViewModel.SelectedRecipe"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.InstructionPageViewModel.SelectedRecipe"/> is changed.</remarks>
+        </member>
+        <member name="M:Recipe.ViewModels.InstructionPageViewModel.OnGetProceduresByRecipeChanged(Recipe.Models.MyRecipe)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.InstructionPageViewModel.GetProceduresByRecipe"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.InstructionPageViewModel.GetProceduresByRecipe"/> is changed.</remarks>
+        </member>
+        <member name="F:Recipe.ViewModels.InstructionPageViewModel.showDialogCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.InstructionPageViewModel.ShowDialogCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.ShowDialogCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.InstructionPageViewModel.ShowDialog"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.InstructionPageViewModel.saveObjectCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.InstructionPageViewModel.SaveObjectCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.SaveObjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.InstructionPageViewModel.SaveObject"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.InstructionPageViewModel.loadProceduresCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.InstructionPageViewModel.LoadProceduresCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.InstructionPageViewModel.LoadProceduresCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.InstructionPageViewModel.LoadProcedures"/>.</summary>
+        </member>
+        <member name="T:Recipe.ViewModels.ReadRecipeDetailsPageViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Recipe.ViewModels.ReadRecipeDetailsPageViewModel.Title">
+            <inheritdoc cref="F:Recipe.ViewModels.ReadRecipeDetailsPageViewModel.title"/>
+        </member>
+        <member name="P:Recipe.ViewModels.ReadRecipeDetailsPageViewModel.TappedRecipe">
+            <inheritdoc cref="F:Recipe.ViewModels.ReadRecipeDetailsPageViewModel.tappedRecipe"/>
+        </member>
+        <member name="T:Recipe.ViewModels.RecipePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.Title">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.title"/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.ImageSource">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.imageSource"/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.RecipeObject">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.recipeObject"/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.ShowPopup">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.showPopup"/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.HeaderTitle">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.headerTitle"/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.SelectedRowData">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.selectedRowData"/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.SelectedOrigin">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.selectedOrigin"/>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.GetRecipeByOrigin">
+            <inheritdoc cref="F:Recipe.ViewModels.RecipePageViewModel.getRecipeByOrigin"/>
+        </member>
+        <member name="M:Recipe.ViewModels.RecipePageViewModel.OnRecipeObjectChanged(Recipe.Models.MyRecipe)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.RecipePageViewModel.RecipeObject"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.RecipePageViewModel.RecipeObject"/> is changed.</remarks>
+        </member>
+        <member name="M:Recipe.ViewModels.RecipePageViewModel.OnSelectedRowDataChanged(Recipe.Models.MyRecipe,Recipe.Models.MyRecipe)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.RecipePageViewModel.SelectedRowData"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.RecipePageViewModel.SelectedRowData"/> is changed.</remarks>
+        </member>
+        <member name="M:Recipe.ViewModels.RecipePageViewModel.OnSelectedOriginChanged(Recipe.Models.Country,Recipe.Models.Country)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.RecipePageViewModel.SelectedOrigin"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.RecipePageViewModel.SelectedOrigin"/> is changed.</remarks>
+        </member>
+        <member name="M:Recipe.ViewModels.RecipePageViewModel.OnGetRecipeByOriginChanged(Recipe.Models.Country)">
+            <summary>Executes the logic for when <see cref="P:Recipe.ViewModels.RecipePageViewModel.GetRecipeByOrigin"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Recipe.ViewModels.RecipePageViewModel.GetRecipeByOrigin"/> is changed.</remarks>
+        </member>
+        <member name="F:Recipe.ViewModels.RecipePageViewModel.showDialogCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.RecipePageViewModel.ShowDialogCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.ShowDialogCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.RecipePageViewModel.ShowDialog"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.RecipePageViewModel.saveObjectCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.RecipePageViewModel.SaveObjectCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.SaveObjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.RecipePageViewModel.SaveObject"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.RecipePageViewModel.loadRecipesCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.RecipePageViewModel.LoadRecipesCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.LoadRecipesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.RecipePageViewModel.LoadRecipes"/>.</summary>
+        </member>
+        <member name="F:Recipe.ViewModels.RecipePageViewModel.browserImageCommand">
+            <summary>The backing field for <see cref="P:Recipe.ViewModels.RecipePageViewModel.BrowserImageCommand"/>.</summary>
+        </member>
+        <member name="P:Recipe.ViewModels.RecipePageViewModel.BrowserImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Recipe.ViewModels.RecipePageViewModel.BrowserImage"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OriginObject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OriginObject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ShowPopup">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ShowPopup" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HeaderTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HeaderTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedRowData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedRowData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProcedureObject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProcedureObject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedRecipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedRecipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GetProceduresByRecipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GetProceduresByRecipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TappedRecipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TappedRecipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImageSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImageSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RecipeObject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RecipeObject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedOrigin">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedOrigin" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GetRecipeByOrigin">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GetRecipeByOrigin" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OriginObject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OriginObject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ShowPopup">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ShowPopup" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HeaderTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HeaderTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedRowData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedRowData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProcedureObject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProcedureObject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedRecipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedRecipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GetProceduresByRecipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GetProceduresByRecipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TappedRecipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TappedRecipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImageSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImageSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RecipeObject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RecipeObject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedOrigin">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedOrigin" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GetRecipeByOrigin">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GetRecipeByOrigin" generated properties.</summary>
+        </member>
+    </members>
+</doc>
